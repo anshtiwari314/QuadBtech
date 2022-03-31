@@ -1,0 +1,31 @@
+@use './sass' as *;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@100;200;300;400;500;600&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    @include removeExtraSpace
+}
+html{
+    font-size: 10px;
+    
+
+    @include mobile {
+        font-size:6px;
+    }
+
+    @include tablet{
+        font-size: 8px;
+    }
+}
+
+body{
+    @include backgroundOverlay(#191d28,1);
+
+    font-family: $font-family;
+    font-size:1.5rem;
+    font-weight:400;
+    color:$white;
+}
+
+
+
+

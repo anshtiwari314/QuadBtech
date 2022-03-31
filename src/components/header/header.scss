@@ -1,0 +1,109 @@
+@use '../../sass/' as *;
+
+.header{
+    @include flex(space-around,center);
+    background-color: transparent;
+    margin-top:2rem;
+    color:$white;
+   
+
+    &_divA{
+    color:red;
+    flex:1;
+    
+    margin-left: 5rem;
+
+        & img{
+            width:30rem;
+            height:6rem;
+        }
+        & p{
+            color:#6C757D;
+            font-size: 2rem;
+            letter-spacing: 0.06rem;
+
+            & span{
+                color:#5DC7C2;
+            }
+        }
+    }
+
+    &_divB_wrap{
+        flex:3; 
+    
+    }
+
+    &_divB{
+        width:40%;
+        margin:0 auto;
+        @include flex(space-between,center);
+    
+    
+        &_select{
+            margin: 1rem;
+            
+            
+        }
+        & button{
+            @include backgroundOverlay(#2e3241,1);
+            border-radius:1.2rem;
+            padding:0.6rem 2rem;
+            outline-width: 1rem;
+            outline:none;
+            border:none;
+
+            &:hover{
+                @include backgroundOverlay(#292c3a,1);
+            }
+        }
+        & button,& .dropdown-item{
+                font-size: 1.8rem;
+                margin: 1rem;
+                text-transform: uppercase; 
+            }
+        & li{
+            
+        }
+        & .dropdown-item{
+            width:16rem;
+            margin-left:0;
+            margin-right:0;
+        }
+        & .dropdown-item:hover{
+            color:black;
+            background-color: #f8f9fa;
+        }
+        
+    }
+    &_divC{
+        margin-right: 5rem;
+        
+        @include flex(space-around,center);
+        flex:1;
+        
+
+        &_telegram{
+            margin:0 1rem;
+            // border:0.1rem solid aqua;
+            border-radius:1.5rem;
+            padding:1rem 2rem;
+            @include backgroundOverlay(#3DC6C1,1);
+            @include flex(center,center);
+            
+
+            & .tele_icon{
+                margin-right:0.5rem;
+                font-size: 2.5rem;
+                
+            }
+            & span{
+                font-size: 1.8rem;
+            }
+        }
+
+        
+    }
+
+    
+}
+

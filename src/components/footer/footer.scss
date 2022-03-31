@@ -1,0 +1,59 @@
+@use '../../sass/' as *;
+
+.footer{
+    margin:2rem auto;
+    width:95vw;
+    color:#6c757d;
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    & .footer_img{
+
+        & img{
+            width:95vw;
+        }
+    }
+    
+    &_content{
+        @include flex(space-between,center);
+        &_A{
+            display:flex;
+
+            & p{
+                margin:0 1rem;
+                
+                & span{
+                    color:#5DC7C2;
+                }
+            }
+        }
+        &_B{
+            
+        }
+    }
+
+    &_button{
+        text-align: center;
+        & button{
+            padding:1rem 1.5rem;
+            border:0.1rem solid #17a2b8;
+            outline:none;
+            background-color: transparent;
+            color:#17a2b8;
+            font-size: 1.8rem;
+            transition: all 0.15s;
+            font-weight: 400;
+            border-radius:0.25rem;
+            letter-spacing: 0.05rem;
+            
+
+             &:hover{
+                @include backgroundOverlay(#17a2b8,1);
+                color:$white;
+            //     transition: all 0.2s;
+                
+
+             }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@use '../../sass/' as *;
+
+.table{
+    color:white;
+    width:90vw;
+    margin:0 auto;
+    text-align: center;
+    border-spacing:2rem;
+    
+    &_head{
+        text-transform: capitalize;
+        
+        border:0.1rem solid red;
+
+        & th{
+            padding:1rem 2rem;
+            color:#6c757d;
+            font-weight: 500;
+            font-size: 2.6rem;
+            letter-spacing: 0.1rem;
+        }
+    }
+    &_data{
+       text-transform: capitalize;
+       padding:2rem;
+
+
+        & td{
+            font-size: 2.4rem;
+            font-weight: 400;
+            letter-spacing: 0.1rem;
+            @include backgroundOverlay(#4d5053,1);
+            border:0.1rem solid red;
+            
+        }
+        &_diff,&_savings{
+            color:#5DC7C2;
+        }
+    }
+}

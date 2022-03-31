@@ -1,0 +1,15 @@
+@mixin flex($justify-content,$align-item){
+    display:flex;
+    justify-content: $justify-content;
+    align-items: $align-item;
+}
+
+@mixin backgroundOverlay($color,$alpha){
+    background-color: rgba($color:$color,$alpha:$alpha);
+}
+
+@mixin removeExtraSpace{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
